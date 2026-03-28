@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Perfumes Mini • 5ml y 10ml</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="icon" href="ay.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --gold: #d4af77;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .perfume-card {
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .perfume-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgb(212 175 119 / 0.25);
+        }
+
+        .size-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .size-btn:hover {
+            background-color: #d4af77;
+            color: #111827;
+            transform: scale(1.05);
+        }
+
+        .bottle {
+            filter: drop-shadow(0 10px 15px rgb(0 0 0 / 0.15));
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-white">
+   
+    <!-- HEADER -->
+    <header class="bg-black py-8 border-b border-amber-800">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-yellow-600 rounded-2xl flex items-center justify-center text-3xl shadow-xl"><img src="ay.png" alt=""></div>
+                <div>
+                    <h1 class="title-font text-4xl tracking-tighter text-amber-400">A&Y essence</h1>
+                    <p class="text-xs text-zinc-400 tracking-[3px] -mt-1">PERFUMES • 5ml &amp; 10ml</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-8 text-sm uppercase tracking-widest">
+                <a href="#hombres" class="hover:text-amber-400 transition-colors">HOMBRES</a>
+                <a href="#damas" class="hover:text-amber-400 transition-colors">DAMAS</a>
+                <div class="h-5 w-px bg-zinc-700"></div> <a href="https://wa.me/message/W23W4ETHYLVRB1" class="boton-flotante" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40">
+</a>
+              
+               
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <!-- HOMBRES SECTION -->
+        <section id="hombres" class="mb-20">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <span class="px-5 py-1 bg-amber-900/50 text-amber-400 text-xs rounded-full font-medium">PARA ÉL</span>
+                    <h2 class="title-font text-6xl font-bold tracking-tighter mt-2">HOMBRES</h2>
+                </div>
+                <div class="text-right">
+                    <p class="text-zinc-400 text-sm">Presentaciones exclusivas</p>
+                    <p class="text-3xl font-light text-amber-400">5 ml • 10 ml</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Perfume 1 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="valentino.png" alt="Valentino" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Valentino Born in Roma </h3>
+                        <p class="text-amber-400 text-sm mb-6">Intenso • Amaderado</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$180</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$350</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="9pm.png" alt="9pm" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">9PM </h3>
+                        <p class="text-amber-400 text-sm mb-6">Intenso • Amaderado</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$70</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$130</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 2 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="bharara.png"  alt="Bharara" class="w-40 h-80% object-contain" >
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Bharara King</h3>
+                        <p class="text-amber-400 text-sm mb-6">Dulce • Oriental</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$90</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$160</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 3 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="acqua.png" alt="Acqua di Gio" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Acqua di Gio</h3>
+                        <p class="text-amber-400 text-sm mb-6">Marino • Fresco</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 4 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="mandarin.png" alt="Mandarin Skin" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Mandarín Skin</h3>
+                        <p class="text-amber-400 text-sm mb-6">Cítrico • Gourmand</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$50</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$90</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 5 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="ysl.png" alt="YSL" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">YSL</h3>
+                        <p class="text-amber-400 text-sm mb-6">Elegante • Amaderado</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 6 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="lattafa.png" alt="Lattafa Khamrah" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Lattafa Khamrah</h3>
+                        <p class="text-amber-400 text-sm mb-6">Dulce • Especiado</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$50</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$90</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 7 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="versace.png" alt="Versace" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Versace</h3>
+                        <p class="text-amber-400 text-sm mb-6">Fresco • Amaderado</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$145</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$280</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 8 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="ice (1).png" alt="Hawas Ice" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Hawas Ice</h3>
+                        <p class="text-amber-400 text-sm mb-6">Fresco • Marino</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$50</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$95</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 9 -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="9am.png" alt="9am" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">9am</h3>
+                        <p class="text-amber-400 text-sm mb-6">Cítrico • Energético</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$50</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-amber-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$80</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DAMAS SECTION -->
+        <section id="damas">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <span class="px-5 py-1 bg-pink-900/50 text-pink-400 text-xs rounded-full font-medium">PARA ELLA</span>
+                    <h2 class="title-font text-6xl font-bold tracking-tighter mt-2">DAMAS</h2>
+                </div>
+                <div class="text-right">
+                    <p class="text-zinc-400 text-sm">Presentaciones exclusivas</p>
+                    <p class="text-3xl font-light text-pink-400">5 ml • 10 ml</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Perfume 1 Dama -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="yara.png" alt="Yara" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Yara</h3>
+                        <p class="text-pink-400 text-sm mb-6">Dulce • Floral</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 2 Dama -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="versacedama.png" alt="Versace" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Versace</h3>
+                        <p class="text-pink-400 text-sm mb-6">Elegante • Floral</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 3 Dama -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="victoria.png" alt="Victoria Secret Loción" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Victoria Secret Loción</h3>
+                        <p class="text-pink-400 text-sm mb-6">Cuerpo • Dulce</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 4 Dama -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="https://picsum.photos/id/251/300/300" alt="Victoria Secret Crema" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Victoria Secret Crema</h3>
+                        <p class="text-pink-400 text-sm mb-6">Hidratante • Floral</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 5 Dama -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="burbery.png" alt="Burberry" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Burberry</h3>
+                        <p class="text-pink-400 text-sm mb-6">Clásico • Chic</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 6 Dama -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="https://picsum.photos/id/160/300/300" alt="Carolina Herrera" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Carolina Herrera</h3>
+                        <p class="text-pink-400 text-sm mb-6">Elegante • Floral</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume 7 Dama -->
+                <div class="perfume-card bg-zinc-900 rounded-3xl overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-8 bottle">
+                        <img src="valentino dama.png" alt="Valentino" class="w-40 h-40 object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-1">Valentino</h3>
+                        <p class="text-pink-400 text-sm mb-6">Romántico • Floral</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="agregarAlCarrito(this)" class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">5 ml</span>
+                                <span class="text-xl font-bold">$99</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                            <button  class="size-btn bg-zinc-800 hover:bg-pink-400 text-white py-4 rounded-2xl flex flex-col items-center justify-center text-sm font-medium">
+                                <span class="text-xs text-zinc-400">10 ml</span>
+                                <span class="text-xl font-bold">$149</span>
+                                <span class="text-[10px] text-emerald-400 mt-1">MXN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-zinc-500 text-sm">© 2026 Luxe Mini • Todos los perfumes listos para envíos en Tijuana y todo México</p>
+            <p class="text-xs text-zinc-600 mt-2">Catálogo creado para ventas exclusivas en presentaciones de 5ml y 10ml</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
